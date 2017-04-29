@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>The Ping-Pong Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+
+    </head>
+    <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Ping-Pong Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, Epicodus!</h1>
+        <p>This is a my take on the Ping-Pong Test.</p>
+      </div>
+    </div>
+
+
+
+    <div class="container text-center">
+      <h1>What number would you like me to ping pong up to?</h1>
+      <form class="form-inline" role="form" id="ping-pong-form">
+        <div class="form-group">
+          <label class="sr-only" for="userNumber">Please enter a number.</label>
+          <input type="text" class="form-control bfh-number" data-min="0" id="inputNumber" placeholder="0">
+        </div>
+        <button type="submit" class="btn btn-default">Go</button>
+      </form>
+      <!-- Example row of columns -->
+      <div class="row text-center startHidden">
+        <div class="col-md-3" >
+          <h2>Results</h2>
+          <p><span class="badge" id="resultBadge">0</span></p>
+          <ul class="list-group" id="resultList"></ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Pings</h2>
+          <p><span class="badge" id="pingBadge">0</span></p>
+          <ul class="list-group" id="pingList"></ul>
+        </div>
+        <div class="col-md-3">
+          <h2>Pongs</h2>
+          <p><span class="badge" id="pongBadge">0</span></p>
+          <ul class="list-group" id="pongList"></ul>
+       </div>
+        <div class="col-md-3">
+          <h2>Ping-Pongs</h2>
+          <p><span class="badge" id="pingPongBadge">0</span></p>
+          <ul class="list-group" id="pingPongList"></ul>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; Zac Cassini 2014</p>
+      </footer>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
